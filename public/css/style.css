@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  color: rgb(112, 112, 112);
+}
+:root {
+  --marLeft: 60px;
+  --marRight: 30px;
+  --skyColor: rgb(0, 195, 255);
+  --headfootColor: rgb(246, 246, 246);
+}
+::-moz-selection {
+  color: var(--headfootColor);
+  background: var(--skyColor);
+}
+
+::selection {
+  color: var(--headfootColor);
+  background: var(--skyColor);
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--headfootColor);
+  padding-bottom: 8px;
+}
+nav div {
+  padding: 20px 0px;
+  margin-left: var(--marLeft);
+  margin-right: var(--marRight);
+}
+nav .logo {
+  padding: 0px;
+  margin: 20px 0px;
+  margin-left: var(--marLeft);
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: rgb(163 163 163);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav .logo:hover {
+  color: var(--skyColor);
+}
+
+p a {
+  color: var(--skyColor);
+}
+nav .menu a {
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgb(163 163 163);
+  margin: 0px 10px;
+  transition: all 200ms ease-in-out;
+}
+nav .menu a:hover {
+  letter-spacing: 6px;
+  color: var(--skyColor);
+}
+main {
+  margin-left: var(--marLeft);
+  margin-right: var(--marRight);
+  padding: 30px 0px;
+}
+main h1 {
+  margin-bottom: 10px;
+}
+main p {
+  margin: 10px 0px;
+  color: rgb(163 163 163);
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: var(--headfootColor);
+  padding: 10px 0px;
+}
+footer p {
+  text-align: center;
+}
+footer p span {
+  color: var(--skyColor);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #a1a1a1;
+  box-sizing: border-box;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 1px solid var(--skyColor);
+  border-radius: 0px;
+}
+
+button[type="submit"] {
+  width: 6rem;
+  outline: none;
+  border: none;
+  padding: 10px 7px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+button[type="submit"]:hover {
+  color: var(--headfootColor);
+  background-color: var(--skyColor);
+}
